@@ -1,0 +1,95 @@
+{
+  "instructions": "由兩名組員獨立檢視資料與模型輸出後填寫；AI silver labels 不可當作人工 gold。分歧需保留原標註並仲裁。",
+  "cases": [
+    {
+      "id": "T01",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T02",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T03",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T04",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T05",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T06",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T07",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T08",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T09",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    },
+    {
+      "id": "T10",
+      "reviewer_1": null,
+      "reviewer_2": null,
+      "adjudicator": null,
+      "labels": {},
+      "relevant_document_ids": null,
+      "notes": ""
+    }
+  ]
+}

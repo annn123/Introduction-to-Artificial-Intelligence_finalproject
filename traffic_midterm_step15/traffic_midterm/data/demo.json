@@ -1,0 +1,25 @@
+{
+  "description": "A騎機車直行，B開汽車左轉。B主張A超速，所以A全責。",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "A超速",
+      "subject": "A",
+      "predicate": "speeding",
+      "kind": "fact",
+      "polarity": true
+    },
+    {
+      "id": "C2",
+      "text": "A應負全部責任",
+      "subject": "A",
+      "predicate": "liability:100",
+      "kind": "liability",
+      "polarity": true,
+      "derived_from": [
+        "C1"
+      ]
+    }
+  ],
+  "evidence": []
+}

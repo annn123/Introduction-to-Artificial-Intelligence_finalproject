@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-21T07:25:27.437437+00:00",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "backend": "ollama",
+    "prompt_version": "step9-20261019",
+    "model": "qwen2.5:3b-instruct",
+    "corpus_sha256": "b56195a4dc09c7ac7dcf56582cb492c421d480e85194cda04c02aeb90fa91b13",
+    "cases_sha256": "fd9af2cddc3dd43eedc2e160807d9cb17d745cd9b3c430d8692a585d23533bf5",
+    "split": "dev",
+    "annotation": "AI_SILVER_SYNTHETIC_NOT_HUMAN_GOLD",
+    "warning": "Silver results are engineering smoke checks, not evidence of research effectiveness.",
+    "llm_experiment_status": "COMPLETE",
+    "extraction_evaluation": "NOT_RUN: fixed atomic claims supplied to every condition",
+    "unmeasured": [
+      "hallucination_rate",
+      "unsupported_claim_rate",
+      "citation_entailment_correctness",
+      "extraction_F1",
+      "mediation_grounding_error_rate"
+    ],
+    "ollama": {
+      "model": "qwen2.5:3b-instruct",
+      "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "3.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 2048,
+        "runner": "ggml"
+      },
+      "version": "0.40.6"
+    }
+  },
+  "classification": {
+    "llm_only": {
+      "n_claims": 5,
+      "accuracy": 0.6,
+      "macro_f1_present_gold_labels": 0.6,
+      "macro_f1_all_five_labels": 0.36,
+      "per_label": {
+        "Supported": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8
+        },
+        "Partially Supported": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Insufficient Evidence": {
+          "support": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Overgeneralized": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Irrelevant": {
+          "support": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "failed_cases": 0,
+      "total_cases": 5,
+      "complete": true
+    },
+    "rag": {
+      "n_claims": 5,
+      "accuracy": 0.2,
+      "macro_f1_present_gold_labels": 0.3333333333333333,
+      "macro_f1_all_five_labels": 0.2,
+      "per_label": {
+        "Supported": {
+          "support": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Partially Supported": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Insufficient Evidence": {
+          "support": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Overgeneralized": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Irrelevant": {
+          "support": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "failed_cases": 0,
+      "total_cases": 5,
+      "complete": true
+    },
+    "rag_verify": {
+      "n_claims": 5,
+      "accuracy": 1.0,
+      "macro_f1_present_gold_labels": 1.0,
+      "macro_f1_all_five_labels": 0.6,
+      "per_label": {
+        "Supported": {
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Partially Supported": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Insufficient Evidence": {
+          "support": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Overgeneralized": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Irrelevant": {
+          "support": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "failed_cases": 0,
+      "total_cases": 5,
+      "complete": true
+    }
+  },
+  "retrieval": {
+    "law": {
+      "n_queries": 4,
+      "precision_at_k": 0.25,
+      "recall_at_k": 0.75
+    },
+    "case": {
+      "n_queries": 2,
+      "precision_at_k": 0.5,
+      "recall_at_k": 1.0
+    }
+  }
+}

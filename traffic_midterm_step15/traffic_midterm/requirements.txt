@@ -1,0 +1,2 @@
+# Core app uses Python 3.10+ standard library only.
+# Optional local inference: install Ollama separately from https://ollama.com/download

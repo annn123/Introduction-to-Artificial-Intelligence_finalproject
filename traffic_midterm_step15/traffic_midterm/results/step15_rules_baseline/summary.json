@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-24T12:45:32.666674+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "backend": "offline",
+    "prompt_version": null,
+    "model": null,
+    "corpus_sha256": "b56195a4dc09c7ac7dcf56582cb492c421d480e85194cda04c02aeb90fa91b13",
+    "cases_sha256": "fd9af2cddc3dd43eedc2e160807d9cb17d745cd9b3c430d8692a585d23533bf5",
+    "split": "test",
+    "annotation": "TWO_INITIAL_REVIEWERS_AI_ASSISTED_USER_ADOPTED",
+    "warning": "Small synthetic dataset. Initial labels from two reviewers; disagreements and source relevance finalized with AI assistance and adopted by the user. Not independent human-consensus gold. Some scenarios overlap development.",
+    "evaluation_version": "step12-20261024",
+    "reference_sha256": "e40f69d735204fb4269f1f8f269b5e088f1f62ed0526f86134d780372b036c71",
+    "reference_provenance": {
+      "dataset": "10 existing synthetic test cases, 15 fixed claims",
+      "initial_reviewers": [
+        "組員一",
+        "組員二"
+      ],
+      "finalization": "AI suggestions for four classification disagreements and source relevance adopted by user in conversation",
+      "two_reviewer_consensus_recorded": false,
+      "independent_human_adjudicator": null,
+      "classification_initial_agreement": {
+        "same": 11,
+        "total": 15,
+        "rate": 0.7333333333333333
+      },
+      "reviewer_prior_exposure": {
+        "組員一": "無",
+        "組員二": "看過T01"
+      },
+      "limitations": [
+        "Some scenarios overlap development examples. This is not a fully untouched holdout.",
+        "Annotation instructions and some label-boundary explanations were supplied by AI.",
+        "Source relevance is judged from existing curated summaries, not a fresh legal-source audit.",
+        "Final rag_verify labels are determined by structured evidence rules, not by independent model reasoning."
+      ],
+      "source_workbook": "traffic_annotation_sources.xlsx",
+      "user_adoption_date": "2026-10-24"
+    },
+    "verification_decision_policy": "rag_verify final labels are determined by structured evidence rules; not an isolated test of LLM reasoning",
+    "retrieval_query_policy": "same description plus fixed claim texts as the RAG classification input",
+    "retrieval_empty_relevance_policy": "queries with no relevant documents for a document kind are excluded from that kind mean",
+    "llm_experiment_status": "NOT_RUN",
+    "extraction_evaluation": "NOT_RUN: fixed atomic claims supplied to every condition",
+    "unmeasured": [
+      "hallucination_rate",
+      "unsupported_claim_rate",
+      "citation_entailment_correctness",
+      "extraction_F1",
+      "mediation_grounding_error_rate"
+    ]
+  },
+  "classification": {
+    "offline_rules": {
+      "n_claims": 15,
+      "accuracy": 1.0,
+      "macro_f1_present_gold_labels": 1.0,
+      "macro_f1_all_five_labels": 0.8,
+      "per_label": {
+        "Supported": {
+          "support": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Partially Supported": {
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Insufficient Evidence": {
+          "support": 6,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Overgeneralized": {
+          "support": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Irrelevant": {
+          "support": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "failed_cases": 0,
+      "total_cases": 10,
+      "complete": true
+    }
+  },
+  "retrieval": {
+    "law": {
+      "n_queries": 9,
+      "precision_at_k": 0.3333333333333333,
+      "recall_at_k": 0.6666666666666666
+    },
+    "case": {
+      "n_queries": 9,
+      "precision_at_k": 0.4074074074074074,
+      "recall_at_k": 0.8611111111111112
+    }
+  }
+}

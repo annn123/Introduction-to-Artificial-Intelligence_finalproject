@@ -1,0 +1,548 @@
+{
+  "schema_version": "step12-reference-v1",
+  "annotation_type": "TWO_INITIAL_REVIEWERS_AI_ASSISTED_USER_ADOPTED",
+  "cases_sha256": "fd9af2cddc3dd43eedc2e160807d9cb17d745cd9b3c430d8692a585d23533bf5",
+  "corpus_sha256": "b56195a4dc09c7ac7dcf56582cb492c421d480e85194cda04c02aeb90fa91b13",
+  "provenance": {
+    "dataset": "10 existing synthetic test cases, 15 fixed claims",
+    "initial_reviewers": [
+      "組員一",
+      "組員二"
+    ],
+    "finalization": "AI suggestions for four classification disagreements and source relevance adopted by user in conversation",
+    "two_reviewer_consensus_recorded": false,
+    "independent_human_adjudicator": null,
+    "classification_initial_agreement": {
+      "same": 11,
+      "total": 15,
+      "rate": 0.7333333333333333
+    },
+    "reviewer_prior_exposure": {
+      "組員一": "無",
+      "組員二": "看過T01"
+    },
+    "limitations": [
+      "Some scenarios overlap development examples. This is not a fully untouched holdout.",
+      "Annotation instructions and some label-boundary explanations were supplied by AI.",
+      "Source relevance is judged from existing curated summaries, not a fresh legal-source audit.",
+      "Final rag_verify labels are determined by structured evidence rules, not by independent model reasoning."
+    ],
+    "source_workbook": "traffic_annotation_sources.xlsx",
+    "user_adoption_date": "2026-10-24"
+  },
+  "cases": [
+    {
+      "id": "T01",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Insufficient Evidence",
+        "C2": "Overgeneralized"
+      },
+      "relevant_document_ids": [
+        "L93",
+        "L1027",
+        "L217",
+        "J01"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Insufficient Evidence",
+            "reason": "沒有影片等證據去證明A是超速的",
+            "evidence_ids_raw": "無"
+          },
+          "reviewer_2": {
+            "label": "Insufficient Evidence",
+            "reason": "無證據",
+            "evidence_ids_raw": "無"
+          }
+        },
+        "C2": {
+          "reviewer_1": {
+            "label": "Overgeneralized",
+            "reason": "並未提及B本身是否有違規，所以直接認定A全責有過度推論的疑慮。",
+            "evidence_ids_raw": "無"
+          },
+          "reviewer_2": {
+            "label": "Overgeneralized",
+            "reason": "無證據且無法直接判斷是A全責",
+            "evidence_ids_raw": "無"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        },
+        "C2": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L1027  J01    J08   L217   L184   L1912",
+        "reviewer_1_reason": "這些來源討論的路口的規定，優先路權等跟這次事故責任相關的事。",
+        "reviewer_2_raw_ids": " L1027 J01 ",
+        "reviewer_2_reason": "與左彎、直行、超速相關",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "超速、轉彎與直行，以及由單一行為推定全責。J08 是無號誌路口情境，本案未交代該條件；不僅因都提到路口或車速就納入。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T02",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Supported",
+        "C2": "Overgeneralized"
+      },
+      "relevant_document_ids": [
+        "L217",
+        "J01",
+        "J10"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Supported",
+            "reason": "證據中有紀載B無照的事實，所以可以支持B無照的主張。",
+            "evidence_ids_raw": "E1"
+          },
+          "reviewer_2": {
+            "label": "Supported",
+            "reason": "有證據",
+            "evidence_ids_raw": "E1"
+          }
+        },
+        "C2": {
+          "reviewer_1": {
+            "label": "Partially Supported",
+            "reason": "B無照是既定事實，但不確定A是否同樣有違規，因此不能完全支持B負全責的主張。",
+            "evidence_ids_raw": "E1"
+          },
+          "reviewer_2": {
+            "label": "Overgeneralized",
+            "reason": "從無照直接跳到全責",
+            "evidence_ids_raw": "E1"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        },
+        "C2": {
+          "method": "AI 建議，由使用者採用",
+          "reason": "未記錄兩位組員共同討論。E1 僅支持無照行為，未建立由無照到全部責任的推論。 此為 AI 輔助確認，非獨立人工仲裁。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "J10  J01 L217",
+        "reviewer_1_reason": "這些來源討論無照的案例，以及相關的一些例外規範。",
+        "reviewer_2_raw_ids": "L217 J01 J10",
+        "reviewer_2_reason": "涉及違規、無照",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "討論無照與具體事故行為、責任推論的區別。兩位原始來源選集一致。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T03",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Insufficient Evidence"
+      },
+      "relevant_document_ids": [
+        "L93",
+        "J01"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Insufficient Evidence",
+            "reason": "有證據但未被核對，所以不能完全支持A超速這件事。",
+            "evidence_ids_raw": "E1未核對"
+          },
+          "reviewer_2": {
+            "label": "Insufficient Evidence",
+            "reason": "證據未核對",
+            "evidence_ids_raw": "E1未核對"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L93",
+        "reviewer_1_reason": "這些來源討論相關法規，疑義是未有影像內容供核對。",
+        "reviewer_2_raw_ids": "L217 L943 ",
+        "reviewer_2_reason": "涉及超速、安全距離的內容",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "討論超速標準與超速事實的證據基礎。L943 處理留意車前狀況及間隔，較不能直接處理本案超速證據未提供的問題。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T04",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Insufficient Evidence"
+      },
+      "relevant_document_ids": [
+        "L1021",
+        "J04"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Irrelevant",
+            "reason": "提供的證據顯示A未闖紅燈，因此不能支持主張。",
+            "evidence_ids_raw": "E1與主張矛盾"
+          },
+          "reviewer_2": {
+            "label": "Insufficient Evidence",
+            "reason": "證據為A沒有闖紅燈，與B主張A闖紅燈矛盾",
+            "evidence_ids_raw": "E1(反向證據)"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "AI 建議，由使用者採用",
+          "reason": "未記錄兩位組員共同討論。E1 記載 A 未闖紅燈，屬反向證據；主張仍與事故爭點有關。五標籤未設被反駁，依既定規則記為證據不足。 此為 AI 輔助確認，非獨立人工仲裁。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L1021  J04",
+        "reviewer_1_reason": "這些來源討論闖紅地的相關法規及案例，但疑義是轉錄與指稱不符。",
+        "reviewer_2_raw_ids": "J04",
+        "reviewer_2_reason": "涉及只憑當事人指控",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "處理號誌行進規則與闖紅燈的證據。J04 僅提供相似案件的證據處理方式，不證明本案闖紅燈。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T05",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Supported"
+      },
+      "relevant_document_ids": [
+        "L112",
+        "J05"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Supported",
+            "reason": "有影像證據，支持主張。",
+            "evidence_ids_raw": "E1已核對"
+          },
+          "reviewer_2": {
+            "label": "Supported",
+            "reason": "有證據",
+            "evidence_ids_raw": "E1"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。組員一原理由提及影像，但題目僅提供已核對的合成轉錄；本列支持依據限於轉錄 E1。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L112   J05    L1912",
+        "reviewer_1_reason": "這些來源討論有開車門造成事故的案例，也提及用路人皆須進駐一隻責任，可以作為討論的依據。",
+        "reviewer_2_raw_ids": "J05 L112 ",
+        "reviewer_2_reason": "與開啟車門、注意其他用路人有關",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "開門注意義務及開門與機車碰撞情境。J05 摘要保留原告主張的程序角色，不能當作法院已認定該主張。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T06",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Insufficient Evidence",
+        "C2": "Overgeneralized"
+      },
+      "relevant_document_ids": [
+        "L941",
+        "L943",
+        "L217",
+        "J02",
+        "J03",
+        "J06",
+        "J07"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Insufficient Evidence",
+            "reason": "未有充分的影像證據，所以主張有可能發生，但不能完全支持。",
+            "evidence_ids_raw": "無"
+          },
+          "reviewer_2": {
+            "label": "Insufficient Evidence",
+            "reason": "沒有證據",
+            "evidence_ids_raw": "無"
+          }
+        },
+        "C2": {
+          "reviewer_1": {
+            "label": "Overgeneralized",
+            "reason": "無證據說明前方一定沒有違規，故不完全支持主張。",
+            "evidence_ids_raw": "無"
+          },
+          "reviewer_2": {
+            "label": "Overgeneralized",
+            "reason": "沒有證據且直接跳到B全責",
+            "evidence_ids_raw": "無"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        },
+        "C2": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L941 L943  J06  J02   J03    L1912",
+        "reviewer_1_reason": "這些來源討論追撞的案例，及相關法規供參考，但疑義是未說明前車煞車原因。",
+        "reviewer_2_raw_ids": "L1912 L941 L943 J02 J03 J07 ",
+        "reviewer_2_reason": "與追撞、保持安全距離相關",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "兼顧後車安全距離、前車煞車原因及全責推論。J06 涉及有原因的煞車；J07 說明不能僅由追撞推出後車全責。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T07",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Irrelevant"
+      },
+      "relevant_document_ids": [],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Irrelevant",
+            "reason": "態度跟違規與否毫不相關，故不支持主張。",
+            "evidence_ids_raw": "無"
+          },
+          "reviewer_2": {
+            "label": "Irrelevant",
+            "reason": "與事故無關",
+            "evidence_ids_raw": "無"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "",
+        "reviewer_1_reason": "疑義為找不到相關案例與事件相關，且我認為態度與肇則是無關的。",
+        "reviewer_2_raw_ids": "無",
+        "reviewer_2_reason": "事故與態度無關",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "本資料庫無直接處理「態度很差」作為肇責依據的來源。組員一 ID 留白、理由表達找不到相關資料；建議明確記為無。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T08",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Insufficient Evidence"
+      },
+      "relevant_document_ids": [
+        "L93",
+        "J01"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Insufficient Evidence",
+            "reason": "既有證據互相矛盾，需要第三方證據加以輔助判斷，證據不完全。",
+            "evidence_ids_raw": "E1E2相互矛盾"
+          },
+          "reviewer_2": {
+            "label": "Insufficient Evidence",
+            "reason": "兩份證據矛盾",
+            "evidence_ids_raw": "E1、E2互相矛盾"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L93  J08",
+        "reviewer_1_reason": "這些來源討論道路限速規範，疑義是資料互相矛盾，需要第三分資料作為輔助或是其他方法找到究竟是否超速。",
+        "reviewer_2_raw_ids": "J08 J01 ",
+        "reviewer_2_reason": "與超速有關，但兩份證據矛盾有疑義",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "車速規範與超速事實的證據判斷。沒有來源能直接替本案解決兩份轉錄衝突；J01 僅提供依證據判斷超速的相關脈絡。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T09",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Supported",
+        "C2": "Insufficient Evidence"
+      },
+      "relevant_document_ids": [
+        "L98",
+        "L943",
+        "J07",
+        "J10"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Supported",
+            "reason": "證據顯示B有變換車道的事實，故支持主張。",
+            "evidence_ids_raw": "E1"
+          },
+          "reviewer_2": {
+            "label": "Supported",
+            "reason": "有證據",
+            "evidence_ids_raw": "E1"
+          }
+        },
+        "C2": {
+          "reviewer_1": {
+            "label": "Insufficient Evidence",
+            "reason": "因為沒有辦法確定A本身是否有其他也是造成事故的違規行為，故不能完全支持主張，證據不足。",
+            "evidence_ids_raw": "E1(但只記錄B)"
+          },
+          "reviewer_2": {
+            "label": "Overgeneralized",
+            "reason": "直接跳到是B造成事故的",
+            "evidence_ids_raw": "E1"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        },
+        "C2": {
+          "method": "AI 建議，由使用者採用",
+          "reason": "未記錄兩位組員共同討論。E1 只記載 B 變換車道，未建立該行為與事故的因果關係；也不能僅由是否知道 A 違規來判斷因果。 此為 AI 輔助確認，非獨立人工仲裁。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L98 L943 L184 L1912",
+        "reviewer_1_reason": "這些來源討論變換車料相關的案例，同時也提及駕駛應行注意之責任及保持安全車距去因應突發狀況，疑義是只又B的行為轉錄，未提及A。",
+        "reviewer_2_raw_ids": "L941 L943 L98 J02 J03 J07 ",
+        "reviewer_2_reason": "與變道、安全距離相關",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "變換車道、注意義務與具體碰撞因果。題目沒有前後車追撞敘述，不因都提安全距離就納入 J02、J03。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    },
+    {
+      "id": "T10",
+      "reviewer_1": "組員一",
+      "reviewer_2": "組員二",
+      "adjudicator": "AI assistance adopted by user; no independent human adjudicator",
+      "labels": {
+        "C1": "Supported",
+        "C2": "Overgeneralized"
+      },
+      "relevant_document_ids": [
+        "L114",
+        "L217",
+        "J09"
+      ],
+      "initial_annotations": {
+        "C1": {
+          "reviewer_1": {
+            "label": "Supported",
+            "reason": "有以核對的證據去證明，故支持B酒駕的主張。",
+            "evidence_ids_raw": "E1已核對"
+          },
+          "reviewer_2": {
+            "label": "Supported",
+            "reason": "有證據",
+            "evidence_ids_raw": "E1"
+          }
+        },
+        "C2": {
+          "reviewer_1": {
+            "label": "Supported",
+            "reason": "酒駕本身在交通事故上站最重的肇責，故支持B負全責的主張。",
+            "evidence_ids_raw": "E1已核對"
+          },
+          "reviewer_2": {
+            "label": "Overgeneralized",
+            "reason": "E1僅支持B酒駕，並不知完整資訊",
+            "evidence_ids_raw": "E1"
+          }
+        }
+      },
+      "finalization": {
+        "C1": {
+          "method": "兩位原始標籤一致，AI 彙整",
+          "reason": "兩位原始標籤相同；未記錄另行共同討論。"
+        },
+        "C2": {
+          "method": "AI 建議，由使用者採用",
+          "reason": "未記錄兩位組員共同討論。E1 僅支持酒駕行為，缺少事故因果與雙方行為的完整支持，不能直接推出全責。 此為 AI 輔助確認，非獨立人工仲裁。"
+        }
+      },
+      "source_relevance": {
+        "reviewer_1_raw_ids": "L114 J09  L217",
+        "reviewer_1_reason": "這些來源討論酒駕相關案例及法規，但疑義再A本身是否具有重大違規",
+        "reviewer_2_raw_ids": "J09 L217 L114",
+        "reviewer_2_reason": "與酒駕、違規有關",
+        "final_origin": "AI suggestion adopted by user",
+        "final_reason": "酒駕規範、具體事故因果與責任推論。兩位原始來源選集一致。"
+      },
+      "notes": "Initial annotations preserved; final labels and source selection adopted by user with AI assistance."
+    }
+  ]
+}

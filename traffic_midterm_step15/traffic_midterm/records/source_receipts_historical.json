@@ -1,0 +1,252 @@
+[
+  {
+    "document_ids": [
+      "L184"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=184",
+    "fetched_utc": "2026-10-18T14:21:32.504095+00:00",
+    "http_status": 200,
+    "sha256": "396695ffdb20fc2c4fa388fdc7f7b2ed95dded27726c9104c91c9c74abbe50d9",
+    "bytes": 44930,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=184",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L1912"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=191-2",
+    "fetched_utc": "2026-10-18T14:21:32.504639+00:00",
+    "http_status": 200,
+    "sha256": "bda05f09c5a9d7104bc272c9e9590a3eb70c4899504bedb68618d9496122cbc1",
+    "bytes": 44230,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=191-2",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L217"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=217",
+    "fetched_utc": "2026-10-18T14:21:32.505212+00:00",
+    "http_status": 200,
+    "sha256": "02a8f166074037584b6e96d01639ca876f3855572f3a8ddaa9c29dd896151967",
+    "bytes": 45019,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=217",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L93"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=93",
+    "fetched_utc": "2026-10-18T14:21:40.771843+00:00",
+    "http_status": 200,
+    "sha256": "a07453f153f95ced0cb341bee555afc6aebd1585e89101707b89b624b040ce3a",
+    "bytes": 44556,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=93",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L941",
+      "L943"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=94",
+    "fetched_utc": "2026-10-18T14:21:40.965922+00:00",
+    "http_status": 200,
+    "sha256": "c03eeefbb0b61b159d5e4ff6fa7b888a6631ebeef790d3354c1bbdbade657091",
+    "bytes": 44185,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=94",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L98"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=98",
+    "fetched_utc": "2026-10-18T14:21:41.033008+00:00",
+    "http_status": 200,
+    "sha256": "a1cc579341a73abfe59f4d9aba3519c217a5b9f1f81f4f0d635ee76ab5030324",
+    "bytes": 44758,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=98",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L1021",
+      "L1022",
+      "L1027"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=102",
+    "fetched_utc": "2026-10-18T14:21:47.096041+00:00",
+    "http_status": 200,
+    "sha256": "75d6f8aebcd694b83f08d12867ad6013930dcac1fd2a68cc28a79d57b4f185a5",
+    "bytes": 46565,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=102",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L112"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=112",
+    "fetched_utc": "2026-10-18T14:21:47.124723+00:00",
+    "http_status": 200,
+    "sha256": "024aca7f28d7a032d424ac1924c449a9086830eb0d825c1835c645d3b7ee90a5",
+    "bytes": 47123,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=112",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "L114"
+    ],
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=114",
+    "fetched_utc": "2026-10-18T14:21:47.302252+00:00",
+    "http_status": 200,
+    "sha256": "6c96cb7c7ff3a48a18b2e5c35d9b7c0888688522fb0317d4d9535822841840b7",
+    "bytes": 44324,
+    "final_url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=114",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J01"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SJEV%2C111%2C%E9%87%8D%E7%B0%A1%2C1354%2C20240131%2C1",
+    "fetched_utc": "2026-10-18T14:21:55.073774+00:00",
+    "http_status": 200,
+    "sha256": "20160b620489d65a51d2f3e927df99a473cfdb6d8d5a1850d6fc814af80cc2ec",
+    "bytes": 65934,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SJEV%2C111%2C%E9%87%8D%E7%B0%A1%2C1354%2C20240131%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J02"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=TYEV%2C114%2C%E6%A1%83%E7%B0%A1%2C511%2C20251031%2C1",
+    "fetched_utc": "2026-10-18T14:21:55.120424+00:00",
+    "http_status": 200,
+    "sha256": "622dac11dba89851e13f5686413f446fdfff337729c5d46ac9227b8324c5b9a4",
+    "bytes": 68118,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=TYEV%2C114%2C%E6%A1%83%E7%B0%A1%2C511%2C20251031%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J03"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SDEV%2C113%2C%E6%B2%99%E5%B0%8F%2C70%2C20240531%2C1",
+    "fetched_utc": "2026-10-18T14:21:55.393055+00:00",
+    "http_status": 200,
+    "sha256": "7bba1d199988ddfe40d313f019d637ae08fe39e54141ed08b75952633cef2375",
+    "bytes": 48724,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SDEV%2C113%2C%E6%B2%99%E5%B0%8F%2C70%2C20240531%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J04"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=TPHV%2C114%2C%E7%B0%A1%2C4%2C20260113%2C1",
+    "fetched_utc": "2026-10-18T14:22:00.817843+00:00",
+    "http_status": 200,
+    "sha256": "3121f3bb2f954b38708129f9df77cb3e59bef80b909ad44bbe0fae304d3333b0",
+    "bytes": 55325,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=TPHV%2C114%2C%E7%B0%A1%2C4%2C20260113%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J05"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=FSEV%2C112%2C%E9%B3%B3%E7%B0%A1%2C561%2C20240202%2C1",
+    "fetched_utc": "2026-10-18T14:22:00.824449+00:00",
+    "http_status": 200,
+    "sha256": "39edcfe5993df36ce1eb9b4499ab5af212356c03940042c8c1b1538e7a8f939d",
+    "bytes": 46371,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=FSEV%2C112%2C%E9%B3%B3%E7%B0%A1%2C561%2C20240202%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J06"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=CDEV%2C113%2C%E6%A9%8B%E7%B0%A1%2C567%2C20240731%2C1",
+    "fetched_utc": "2026-10-18T14:22:01.291724+00:00",
+    "http_status": 200,
+    "sha256": "6fe1bfd1c5a370a9478a92e34068bba7ccfbcf78192b0dc9a1f4a63a3a6b9e5d",
+    "bytes": 42063,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=CDEV%2C113%2C%E6%A9%8B%E7%B0%A1%2C567%2C20240731%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J07"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=CLEV%2C113%2C%E5%A3%A2%E7%B0%A1%2C150%2C20240621%2C1",
+    "fetched_utc": "2026-10-18T14:22:06.246668+00:00",
+    "http_status": 200,
+    "sha256": "73d97a4272709d1241033022e94ddf76a55a354eae20a384a40d9ad5ed2c097a",
+    "bytes": 58247,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=CLEV%2C113%2C%E5%A3%A2%E7%B0%A1%2C150%2C20240621%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J08"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=KMHV%2C113%2C%E9%87%8D%E4%B8%8A%2C2%2C20250813%2C2",
+    "fetched_utc": "2026-10-18T14:22:06.467480+00:00",
+    "http_status": 200,
+    "sha256": "fc6c923c390885c37cc71281a73c4aa5ef213c1540bb3b10f7910737b0b65489",
+    "bytes": 248186,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=KMHV%2C113%2C%E9%87%8D%E4%B8%8A%2C2%2C20250813%2C2",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J09"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SDEV%2C113%2C%E6%B2%99%E7%B0%A1%2C173%2C20241227%2C1",
+    "fetched_utc": "2026-10-18T14:22:06.718561+00:00",
+    "http_status": 200,
+    "sha256": "03ad438ab7a741c5a731abda4b75570e2d973e822df2d2c16bb5acc8d8763bc9",
+    "bytes": 42804,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SDEV%2C113%2C%E6%B2%99%E7%B0%A1%2C173%2C20241227%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  },
+  {
+    "document_ids": [
+      "J10"
+    ],
+    "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SCDV%2C110%2C%E7%B0%A1%E4%B8%8A%2C100%2C20211216%2C1",
+    "fetched_utc": "2026-10-18T14:22:13.015355+00:00",
+    "http_status": 200,
+    "sha256": "65f8d6e21326997eae335c8dda90451232052b7b918510064bd618be2297d152",
+    "bytes": 123785,
+    "final_url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SCDV%2C110%2C%E7%B0%A1%E4%B8%8A%2C100%2C20211216%2C1",
+    "page_contains_expected_heading": true,
+    "note": "HTTP availability receipt only; not an independent content or legal validity review."
+  }
+]

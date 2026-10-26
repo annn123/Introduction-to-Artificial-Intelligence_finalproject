@@ -1,0 +1,69 @@
+{
+  "stage": "step15_delivery_audit",
+  "recorded_utc": "2026-10-24T12:45:37.446051+00:00",
+  "local_verification_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "new_model_inference_performed": false,
+  "original_three_conditions_changed": false,
+  "runtime_code_changed_in_step15": false,
+  "unit_tests": {
+    "total": 153,
+    "passed": 153,
+    "includes_mock_model_tests": true
+  },
+  "checks": [
+    "153 tests passed in staged release",
+    "offline demo executed",
+    "frontend JavaScript syntax checked",
+    "saved classification metrics and retrieval recomputed",
+    "source/case/reference hashes verified",
+    "same RAG retrieval across two conditions verified"
+  ],
+  "post_hoc_rule_baseline": {
+    "accuracy": 1.0,
+    "n_claims": 15,
+    "exactly_matches_saved_rag_verify_final_labels": true,
+    "not_a_new_model_condition": true
+  },
+  "limitations": [
+    "No new real-Ollama execution on this host",
+    "No new native-browser visual QA",
+    "No legal-source recertification",
+    "No independent untouched test dataset",
+    "No PDF produced"
+  ],
+  "runtime_source_hashes": {
+    "traffic/__init__.py": "c61e3f5df69283ecca3b4f33afb0409d5f6d9d411dc4b186bbba1b6d8de4ba53",
+    "traffic/claim_candidates.py": "281a14de560af5b1f6d71825e2e2bf867f8797bae17421b7446f35d418aa41a9",
+    "traffic/core.py": "e5d9fe662e29b0baa02be47fe5b427debe637c0edba67d4c281468260bb631c2",
+    "traffic/evaluate.py": "5d07d622bfc3eae2ff9c943c2fa51be221fb5d9c0034b027ea6ca2101389c32e",
+    "traffic/extraction.py": "7cd8b6098c1081d95c9ec5195ef4c6b50ed692abedaa204d8e7291bd5dcfae38",
+    "traffic/llm.py": "a94254816b9b23fdc181ca624a72fe533f78cffa0bbc5f74e44f840f36670ff1",
+    "traffic/pipeline.py": "a4777f3c2515fc32d01d644da92e501b7dbac7e3dfcb56908447214a7ca5ec71",
+    "traffic/server.py": "d3ddc0a1b3e42958e5b15a1e1eb2e0e189ad987d6d1a2c5f9ef12a2cd7dadd70",
+    "tests/test_ollama_transport.py": "d8ebe5f32e9d9eca024e5908f2a5843bbf1220d44d4c31dde32ab766684c20ab",
+    "tests/test_step10a_staged_extraction.py": "288e4c2895477373fe571adfcf79d3a9f94cdb6b3d670ddd4fc56954e09a5c8b",
+    "tests/test_step10b_quotes.py": "8d8aa2823ae8400e0c6d957231953a426fd9cda5499ec3bd692fc7c46753a561",
+    "tests/test_step10c_candidates.py": "26cc5df0614ac94c5549826d1f7557767a0cf02ba84c87ede98ad0ac7caa9b5c",
+    "tests/test_step10d_reference_reporting.py": "df0681c542f82c7298464f637dd6b1b2d72a482a8caca658e4a96bb4a4f4513d",
+    "tests/test_step10e_integration.py": "285d0112a9299886b71c2fa5604e88c41d291bac79702f73c61416e2339e66c5",
+    "tests/test_step10f_mediator.py": "160c2ece114312569a17d5e09e2fb29c264297a89058ad70d91b672ab62dd5e2",
+    "tests/test_step12_reference.py": "983698764a242d665ce211ca1083f53c41e06ca69dc40dac81c66022794fb8ee",
+    "tests/test_step8_claim_ids.py": "2bd75afe07f673cd025f05d073e4e990a787f5cd9eea37802b7924b02d1a2e1d",
+    "tests/test_step8_model.py": "9990d6cad67a003e8774139d64343312dda47f29fa780bd7bfa3b8b1745633fc",
+    "tests/test_step9_extraction.py": "a4637879fdf71aa6f26bd9348ba427ecb72bfbf497c47ff7baabea3cf94177da",
+    "tests/test_system.py": "a7a8f7cc9ad8d649f077cbb6aa33c2ec001f5b68e7e47b6aaec738d0ad95e422",
+    "data/annotation_template.json": "f9022a496879b1d7699d534cf5b82deefeb46fec1e43c54800bb64074d0a12e8",
+    "data/cases.json": "fd9af2cddc3dd43eedc2e160807d9cb17d745cd9b3c430d8692a585d23533bf5",
+    "data/corpus.json": "6d3eb90bea3e1fbb796b990050f85bc2ddc121ada7d1e01aa7bfbae6c184ff61",
+    "data/demo.json": "bd56ea045180b1cfa5f6f9f765de101574ad8bb302f48342f594faf8c8b6befd",
+    "data/reference_annotations.json": "e40f69d735204fb4269f1f8f269b5e088f1f62ed0526f86134d780372b036c71",
+    "static/index.html": "b65d75812a4d934a381c4380e9784e615aa332306c108eecb7bba3e77fa54408"
+  },
+  "original_result_file_hashes": {
+    "summary.json": "80919f0f13fe8e5bab86693a630d660fc6ef44ad7a416725ca77821097849e7a",
+    "runs.json": "816ae0d7d792747521a07ee461dbc514c10049ed245d0f957e1802c40033e323"
+  }
+}

@@ -1,0 +1,600 @@
+[
+  {
+    "id": "T01",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "A騎機車直行，B開汽車左轉。B主張A超速，所以A全責。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "A超速",
+        "subject": "A",
+        "predicate": "speeding",
+        "kind": "fact",
+        "polarity": true
+      },
+      {
+        "id": "C2",
+        "text": "A應負全部責任",
+        "subject": "A",
+        "predicate": "liability:100",
+        "kind": "liability",
+        "polarity": true,
+        "derived_from": [
+          "C1"
+        ]
+      }
+    ],
+    "evidence": [],
+    "silver_labels": [
+      "Insufficient Evidence",
+      "Overgeneralized"
+    ],
+    "relevant_document_ids": [
+      "L93",
+      "L1027",
+      "L217",
+      "J01"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T02",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B沒有駕照，A認為B無照所以B全責。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B無照",
+        "subject": "B",
+        "predicate": "unlicensed",
+        "kind": "fact",
+        "polarity": true
+      },
+      {
+        "id": "C2",
+        "text": "B應負全部責任",
+        "subject": "B",
+        "predicate": "liability:100",
+        "kind": "liability",
+        "polarity": true,
+        "derived_from": [
+          "C1"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "B",
+            "predicate": "unlicensed",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported",
+      "Overgeneralized"
+    ],
+    "relevant_document_ids": [
+      "L184",
+      "L217",
+      "J01",
+      "J10"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T03",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B指稱A超速，A只有行車紀錄器，未提供影像內容。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "A超速",
+        "subject": "A",
+        "predicate": "speeding",
+        "kind": "fact",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": false,
+        "assertions": [
+          {
+            "subject": "A",
+            "predicate": "speeding",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Insufficient Evidence"
+    ],
+    "relevant_document_ids": [
+      "L93",
+      "J01"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T04",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B指稱A闖紅燈，提供的轉錄卻顯示A未闖紅燈。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "A闖紅燈",
+        "subject": "A",
+        "predicate": "red_light",
+        "kind": "fact",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "A",
+            "predicate": "red_light",
+            "polarity": false
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Insufficient Evidence"
+    ],
+    "relevant_document_ids": [
+      "L1021",
+      "J04"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T05",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B開啟車門，A機車經過。轉錄記載B開啟車門。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B開啟車門",
+        "subject": "B",
+        "predicate": "door",
+        "kind": "fact",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "B",
+            "predicate": "door",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported"
+    ],
+    "relevant_document_ids": [
+      "L112",
+      "J05"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T06",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B追撞A，B主張A無故煞車。現有資料尚未說明前車煞車原因。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B未保持安全距離",
+        "subject": "B",
+        "predicate": "distance",
+        "kind": "fact",
+        "polarity": true
+      },
+      {
+        "id": "C2",
+        "text": "B一定負全部責任",
+        "subject": "B",
+        "predicate": "liability:100",
+        "kind": "liability",
+        "polarity": true
+      }
+    ],
+    "evidence": [],
+    "silver_labels": [
+      "Insufficient Evidence",
+      "Overgeneralized"
+    ],
+    "relevant_document_ids": [
+      "L941",
+      "L943",
+      "J02",
+      "J03",
+      "J06",
+      "J07"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T07",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "A認為B態度很差，應為事故負責。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B態度很差",
+        "subject": "B",
+        "predicate": "unknown",
+        "kind": "irrelevant",
+        "polarity": true
+      }
+    ],
+    "evidence": [],
+    "silver_labels": [
+      "Irrelevant"
+    ],
+    "relevant_document_ids": [],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T08",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B指稱A超速。兩份提供的轉錄對A是否超速互相矛盾。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "A超速",
+        "subject": "A",
+        "predicate": "speeding",
+        "kind": "fact",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "A",
+            "predicate": "speeding",
+            "polarity": true
+          }
+        ]
+      },
+      {
+        "id": "E2",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "A",
+            "predicate": "speeding",
+            "polarity": false
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Insufficient Evidence"
+    ],
+    "relevant_document_ids": [
+      "L93",
+      "J01"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T09",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "A認為B變換車道造成事故，但只有B變換車道的轉錄。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B變換車道",
+        "subject": "B",
+        "predicate": "lane_change",
+        "kind": "fact",
+        "polarity": true
+      },
+      {
+        "id": "C2",
+        "text": "B變換車道造成事故",
+        "subject": "B",
+        "predicate": "cause:lane_change",
+        "kind": "causal",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "B",
+            "predicate": "lane_change",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported",
+      "Insufficient Evidence"
+    ],
+    "relevant_document_ids": [
+      "L98",
+      "J07",
+      "J10"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "T10",
+    "split": "test",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "A主張B酒駕，B應負全部責任。提供的轉錄只有酒駕行為。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B酒駕",
+        "subject": "B",
+        "predicate": "alcohol",
+        "kind": "fact",
+        "polarity": true
+      },
+      {
+        "id": "C2",
+        "text": "B一定負全部責任",
+        "subject": "B",
+        "predicate": "liability:100",
+        "kind": "liability",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "B",
+            "predicate": "alcohol",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported",
+      "Overgeneralized"
+    ],
+    "relevant_document_ids": [
+      "L114",
+      "L217",
+      "J09"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "D01",
+    "split": "dev",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "A騎機車直行，B開汽車左轉。A指稱B未禮讓。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B未禮讓直行車",
+        "subject": "B",
+        "predicate": "yield",
+        "kind": "fact",
+        "polarity": true
+      }
+    ],
+    "evidence": [],
+    "silver_labels": [
+      "Insufficient Evidence"
+    ],
+    "relevant_document_ids": [
+      "L1027",
+      "J01"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "D02",
+    "split": "dev",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B追撞A，已提供安全距離違反的轉錄。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B未保持安全距離",
+        "subject": "B",
+        "predicate": "distance",
+        "kind": "fact",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "B",
+            "predicate": "distance",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported"
+    ],
+    "relevant_document_ids": [
+      "L941",
+      "J02",
+      "J03"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "D03",
+    "split": "dev",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "A否認超速，提供轉錄顯示A未超速。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "A沒有超速",
+        "subject": "A",
+        "predicate": "speeding",
+        "kind": "fact",
+        "polarity": false
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "provided_transcript",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "A",
+            "predicate": "speeding",
+            "polarity": false
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported"
+    ],
+    "relevant_document_ids": [
+      "L93"
+    ],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "D04",
+    "split": "dev",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "B主張A有錢就應賠償。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "A很有錢",
+        "subject": "A",
+        "predicate": "unknown",
+        "kind": "irrelevant",
+        "polarity": true
+      }
+    ],
+    "evidence": [],
+    "silver_labels": [
+      "Irrelevant"
+    ],
+    "relevant_document_ids": [],
+    "source_judgment_ids": []
+  },
+  {
+    "id": "D05",
+    "split": "dev",
+    "provenance": "AI_AUTHORED_SYNTHETIC_NOT_HUMAN_GOLD",
+    "human_reviewed": false,
+    "description": "本案裁判轉錄記載B負全部責任。",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "B負全部責任",
+        "subject": "B",
+        "predicate": "liability:100",
+        "kind": "liability",
+        "polarity": true
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "source_type": "court_finding",
+        "description": "合成案例提供的證據轉錄；並非真實影片或警方文件。",
+        "reviewed": true,
+        "assertions": [
+          {
+            "subject": "B",
+            "predicate": "liability:100",
+            "polarity": true
+          }
+        ]
+      }
+    ],
+    "silver_labels": [
+      "Supported"
+    ],
+    "relevant_document_ids": [
+      "L184",
+      "L217"
+    ],
+    "source_judgment_ids": []
+  }
+]
